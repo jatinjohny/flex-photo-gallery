@@ -1,3 +1,45 @@
 * {
     box-sizing: border-box;
 } 
+
+body {
+    margin:0;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #f5f6f7;
+}
+
+.header {
+    background:#0a0a23;
+    padding: 32px;    
+    color:#fff;
+    border-bottom:4px solid #f1b036;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+
+.gallery {
+    padding:20px 10px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+
+.gallery img {
+    width:100%;
+    max-width:350px;
+    height:300px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+
+.gallery::after{
+    content:"";
+    width:350px;
+}
